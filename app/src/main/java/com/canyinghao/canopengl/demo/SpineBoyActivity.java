@@ -19,7 +19,7 @@ import com.canyinghao.canadapter.CanHolderHelper;
 import com.canyinghao.canadapter.CanOnItemListener;
 import com.canyinghao.canadapter.CanRVAdapter;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -29,15 +29,15 @@ import butterknife.OnClick;
 public class SpineBoyActivity extends AppActivity {
 
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @Bind(R.id.rv)
+    @BindView(R.id.rv)
     RecyclerView rv;
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
 
-    @Bind(R.id.frame)
+    @BindView(R.id.frame)
     FrameLayout frame;
 
 

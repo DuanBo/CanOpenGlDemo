@@ -26,19 +26,19 @@ import com.canyinghao.canadapter.CanRVAdapter;
 import com.canyinghao.canopengl.demo.gl.cube.BouncyCubeActivity;
 import com.canyinghao.canopengl.demo.gl.sixstar.SixPointerStarActivity;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppActivity {
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @Bind(R.id.rv)
+    @BindView(R.id.rv)
     RecyclerView rv;
-    @Bind(R.id.frame)
+    @BindView(R.id.frame)
     FrameLayout frame;
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
 
     SpineBoy boy;
@@ -159,7 +159,7 @@ public class MainActivity extends AppActivity {
 
     public void addBoy() {
         // 设置载入view WindowManager参数
-        final WindowManager mWM = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+        final WindowManager mWM = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
 
         final WindowManager.LayoutParams wmParams = new WindowManager.LayoutParams();
 
